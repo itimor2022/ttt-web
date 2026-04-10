@@ -32,7 +32,7 @@ if((window as any).__TAURI_IPC__) { // tauri环境
   if(process.env.NODE_ENV === "development") {
     WKApp.apiClient.config.apiURL = apiURL
   }else {
-    WKApp.apiClient.config.apiURL = "/api/v1/" // 正式环境地址 (通用打包镜像，用此相对地址),打包出来的镜像可以通过API_URL环境变量来修改API地址
+    WKApp.apiClient.config.apiURL = "/v1/" // 正式环境地址 (通用打包镜像，用此相对地址),打包出来的镜像可以通过API_URL环境变量来修改API地址
   }
 }
 

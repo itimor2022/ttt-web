@@ -5,7 +5,7 @@ export class APIClientConfig {
     private _apiURL: string =""
     private _token:string = ""
     tokenCallback?:()=>string|undefined
-    // private _apiURL: string = "/api/v1/" // 正式打包用此地址
+    // private _apiURL: string = "/v1/" // 正式打包用此地址
     
 
     set apiURL(apiURL:string) {
