@@ -1,0 +1,11 @@
+Rule 0: {"oneOf":"has oneOf"}
+  OneOf 0: test=/\.avif$/, include=undefined, loader=undefined
+  OneOf 1: test=/\.bmp$/,/\.gif$/,/\.jpe?g$/,/\.png$/, include=undefined, loader=undefined
+  OneOf 2: test=/\.svg$/, include=undefined, loader=["C:\\Users\\Administrator\\Desktop\\im_tsdd\\Web-
+  OneOf 3: test=/\.(js|mjs|jsx|ts|tsx)$/, include=C:\Users\Administrator\Desktop\im_tsdd\Web-main\Web-main\apps\web\src, loader=C:\Users\Administrator\Desktop\im_tsdd\Web-main\We
+  OneOf 4: test=/\.(js|mjs)$/, include=undefined, loader=C:\Users\Administrator\Desktop\im_tsdd\Web-main\We
+  OneOf 5: test=/\.css$/, include=undefined, loader=["C:\\Users\\Administrator\\Desktop\\im_tsdd\\Web-
+  OneOf 6: test=/\.module\.css$/, include=undefined, loader=["C:\\Users\\Administrator\\Desktop\\im_tsdd\\Web-
+  OneOf 7: test=/\.(scss|sass)$/, include=undefined, loader=["C:\\Users\\Administrator\\Desktop\\im_tsdd\\Web-
+  OneOf 8: test=/\.module\.(scss|sass)$/, include=undefined, loader=["C:\\Users\\Administrator\\Desktop\\im_tsdd\\Web-
+  OneOf 9: test=undefined, include=undefined, loader=undefined

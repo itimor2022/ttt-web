@@ -1,0 +1,34 @@
+/* 钱包工具栏按钮通用样式 */
+.wk-wallet-toolbar-btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.wk-wallet-toolbar-btn:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+}
+
+.wk-wallet-toolbar-btn:active {
+    transform: scale(0.98);
+}
+
+.wk-wallet-toolbar-btn svg {
+    transition: transform 0.2s;
+}
+
+.wk-wallet-toolbar-btn:hover svg {
+    transform: scale(1.08);
+}
+
+/* 红包按钮特殊效果 */
+.wk-redpacket-btn:hover {
+    background-color: rgba(231, 76, 60, 0.08);
+}

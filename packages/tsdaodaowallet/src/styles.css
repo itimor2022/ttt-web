@@ -1,0 +1,103 @@
+/* 钱包模块全局样式 - 适配主题 */
+
+/* 红包弹窗覆盖层 */
+.wk-wallet-modal-overlay {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.wk-wallet-modal-overlay .semi-modal-content {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.wk-wallet-modal-overlay .semi-modal-body {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 详情弹窗 */
+.wk-wallet-detail-modal .semi-modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--wk-color-item, #fff) !important;
+}
+
+.wk-wallet-detail-modal .semi-modal-body {
+    padding: 0 !important;
+}
+
+/* 钱包全屏弹窗 */
+.wk-wallet-fullpage-modal {
+    padding: 0 !important;
+}
+
+.wk-wallet-fullpage-modal .semi-modal {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wk-wallet-fullpage-modal .semi-modal-content {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    background: var(--wk-color-secondary, #f5f6fa) !important;
+}
+
+.wk-wallet-fullpage-modal .semi-modal-body {
+    padding: 0 !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+}
+
+/* 优化移动端适配 */
+@media (max-width: 768px) {
+    .wk-wallet-detail-modal .semi-modal-content {
+        width: 90% !important;
+        max-width: 400px !important;
+    }
+}
+
+/* 通用滚动条美化 - 亮色 */
+.wk-wallet-page::-webkit-scrollbar,
+.wk-wallet-main::-webkit-scrollbar,
+.wk-wallet-container::-webkit-scrollbar,
+.wk-bills-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wk-wallet-page::-webkit-scrollbar-thumb,
+.wk-wallet-main::-webkit-scrollbar-thumb,
+.wk-wallet-container::-webkit-scrollbar-thumb,
+.wk-bills-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.wk-wallet-page::-webkit-scrollbar-thumb:hover,
+.wk-wallet-main::-webkit-scrollbar-thumb:hover,
+.wk-wallet-container::-webkit-scrollbar-thumb:hover,
+.wk-bills-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* 暗色模式滚动条 */
+body[theme-mode=dark] .wk-wallet-page::-webkit-scrollbar-thumb,
+body[theme-mode=dark] .wk-wallet-main::-webkit-scrollbar-thumb,
+body[theme-mode=dark] .wk-wallet-container::-webkit-scrollbar-thumb,
+body[theme-mode=dark] .wk-bills-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body[theme-mode=dark] .wk-wallet-page::-webkit-scrollbar-thumb:hover,
+body[theme-mode=dark] .wk-wallet-main::-webkit-scrollbar-thumb:hover,
+body[theme-mode=dark] .wk-wallet-container::-webkit-scrollbar-thumb:hover,
+body[theme-mode=dark] .wk-bills-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

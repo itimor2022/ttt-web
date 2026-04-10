@@ -1,0 +1,168 @@
+/* 转账详情页样式 */
+.wk-transfer-detail-page {
+    width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wk-transfer-detail-loading,
+.wk-transfer-detail-error {
+    padding: 60px 20px;
+    text-align: center;
+    color: #999;
+}
+
+/* 顶部区域 */
+.wk-transfer-detail-header {
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.wk-transfer-detail-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-transfer-detail-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.wk-transfer-detail-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 金额区域 */
+.wk-transfer-detail-amount-section {
+    padding: 30px 20px;
+    text-align: center;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wk-transfer-detail-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.wk-amount-symbol {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.wk-amount-value {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wk-transfer-detail-remark {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.wk-transfer-detail-status {
+    margin-top: 12px;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.wk-transfer-detail-status.status-0 {
+    background: #FFF3E0;
+    color: #F57C00;
+}
+
+.wk-transfer-detail-status.status-1 {
+    background: #E8F5E9;
+    color: #4CAF50;
+}
+
+.wk-transfer-detail-status.status-2,
+.wk-transfer-detail-status.status-3 {
+    background: #F5F5F5;
+    color: #999;
+}
+
+/* 详细信息 */
+.wk-transfer-detail-info {
+    padding: 20px;
+}
+
+.wk-transfer-detail-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wk-transfer-detail-info-item:last-child {
+    border-bottom: none;
+}
+
+.wk-info-label {
+    color: #999;
+    font-size: 14px;
+}
+
+.wk-info-value {
+    color: #333;
+    font-size: 14px;
+}
+
+.wk-info-mono {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+/* 操作按钮 */
+.wk-transfer-detail-actions {
+    padding: 20px;
+}
+
+.wk-transfer-receive-btn {
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.wk-transfer-receive-btn:hover {
+    opacity: 0.9;
+}
+
+.wk-transfer-receive-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+

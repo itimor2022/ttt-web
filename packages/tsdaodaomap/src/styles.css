@@ -1,0 +1,12 @@
+/* 地图模块全局样式 */
+
+/* 地图弹窗 */
+.wk-map-modal .semi-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.wk-map-modal .semi-modal-body {
+    padding: 0 !important;
+}
+

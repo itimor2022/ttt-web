@@ -1,0 +1,299 @@
+/* 左侧菜单页面 - 和收藏模块一致 */
+.wk-wallet-page {
+    width: 100%;
+    height: 100%;
+    border-right: var(--wk-line);
+}
+
+.wk-wallet-menu {
+    overflow-y: auto;
+}
+
+.wk-wallet-menu-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--wk-color-item);
+    color: #999;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.wk-wallet-menu-item:hover {
+    background-color: var(--wk-color-hover, #f5f5f5);
+}
+
+.wk-wallet-menu-item-selected {
+    background-color: var(--wk-color-secondary, #f5f5f5);
+    color: var(--wk-color-theme, #E46342);
+}
+
+.wk-wallet-menu-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.wk-wallet-menu-item span {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: inherit;
+}
+
+/* 右侧内容页面 */
+.wk-wallet-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wk-wallet-content-body {
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100% - var(--wk-height-viewqueueheader));
+    padding: 20px;
+    background: var(--wk-color-secondary, #f6f6f6);
+    box-sizing: border-box;
+}
+
+/* ===== 余额卡片 ===== */
+.wk-wallet-balance-card {
+    padding: 32px;
+    background: var(--wk-color-item, #fff);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.wk-wallet-balance-label {
+    font-size: 13px;
+    color: var(--wk-color-font-tip, #999);
+}
+
+.wk-wallet-balance-value {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--wk-text-item, #333);
+    margin-top: 8px;
+}
+
+.wk-wallet-balance-value span {
+    font-size: 20px;
+}
+
+.wk-wallet-frozen {
+    font-size: 13px;
+    color: var(--wk-color-font-tip, #999);
+    margin-top: 6px;
+}
+
+/* ===== 表单 ===== */
+.wk-wallet-form {
+    max-width: 400px;
+    background: var(--wk-color-item, #fff);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.wk-wallet-form-tip {
+    font-size: 13px;
+    color: var(--wk-color-font-tip, #888);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: var(--wk-color-secondary, #f9f9f9);
+    border-radius: 4px;
+}
+
+.wk-wallet-form-balance {
+    font-size: 14px;
+    color: var(--wk-color-theme, #E46342);
+    margin-bottom: 16px;
+}
+
+.wk-wallet-form-item {
+    margin-bottom: 16px;
+}
+
+.wk-wallet-form-label {
+    font-size: 13px;
+    color: var(--wk-color-font-tip, #888);
+    margin-bottom: 8px;
+}
+
+.wk-wallet-form-warning {
+    padding: 12px;
+    background: #fff7e6;
+    border-radius: 4px;
+    color: #d46b08;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.wk-wallet-form-submit {
+    margin-top: 20px;
+}
+
+.wk-wallet-form-submit .semi-button {
+    height: 40px;
+}
+
+/* ===== 密码输入 ===== */
+.wk-wallet-pwd-section {
+    max-width: 400px;
+    background: var(--wk-color-item, #fff);
+    border-radius: 8px;
+    padding: 32px 24px;
+}
+
+.wk-wallet-pwd-amount {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--wk-text-item, #333);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.wk-wallet-pwd-amount span {
+    font-size: 18px;
+}
+
+.wk-wallet-pwd-tip {
+    font-size: 14px;
+    color: var(--wk-color-font-tip, #888);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.wk-wallet-pwd-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.wk-wallet-pwd-dot {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--wk-line-color, #ddd);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--wk-color-secondary, #f9f9f9);
+}
+
+.wk-wallet-pwd-dot.filled {
+    border-color: var(--wk-color-theme, #E46342);
+    background: var(--wk-color-item, #fff);
+}
+
+.wk-wallet-pwd-dot.filled span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--wk-text-item, #333);
+}
+
+.wk-wallet-keyboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+/* ===== 账单 ===== */
+.wk-wallet-bills {
+    background: var(--wk-color-item, #fff);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wk-wallet-bills-loading,
+.wk-wallet-bills-empty {
+    padding: 60px 0;
+    text-align: center;
+    color: var(--wk-color-font-tip, #999);
+    font-size: 14px;
+}
+
+.wk-wallet-bill-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: var(--wk-line, 1px solid #f5f5f5);
+}
+
+.wk-wallet-bill-item:last-child {
+    border-bottom: none;
+}
+
+.wk-wallet-bill-info {
+    flex: 1;
+}
+
+.wk-wallet-bill-type {
+    font-size: 14px;
+    color: var(--wk-text-item, #333);
+}
+
+.wk-wallet-bill-time {
+    font-size: 12px;
+    color: var(--wk-color-font-tip, #999);
+    margin-top: 4px;
+}
+
+.wk-wallet-bill-right {
+    text-align: right;
+}
+
+.wk-wallet-bill-amount {
+    font-size: 15px;
+    color: var(--wk-text-item, #333);
+}
+
+.wk-wallet-bill-amount.income {
+    color: #52c41a;
+}
+
+.wk-wallet-bill-status {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.wk-wallet-bill-status.status-0 { color: #faad14; }
+.wk-wallet-bill-status.status-1,
+.wk-wallet-bill-status.status-2 { color: #52c41a; }
+.wk-wallet-bill-status.status-3 { color: #ff4d4f; }
+
+/* ===== 深色模式 ===== */
+body[theme-mode=dark] .wk-wallet-menu-item {
+    background-color: var(--wk-color-item);
+    color: #888;
+}
+
+body[theme-mode=dark] .wk-wallet-menu-item-selected {
+    background-color: var(--wk-color-secondary, #333);
+    color: var(--wk-color-theme, #E46342);
+}
+
+body[theme-mode=dark] .wk-wallet-content-body {
+    background: var(--wk-color-secondary, #0f0f0f);
+}
+
+body[theme-mode=dark] .wk-wallet-balance-card,
+body[theme-mode=dark] .wk-wallet-form,
+body[theme-mode=dark] .wk-wallet-pwd-section,
+body[theme-mode=dark] .wk-wallet-bills {
+    background: var(--wk-color-item, #212121);
+}
+
+body[theme-mode=dark] .wk-wallet-form-tip {
+    background: var(--wk-color-secondary, #0f0f0f);
+}
+
+body[theme-mode=dark] .wk-wallet-form-warning {
+    background: #2a2000;
+}

@@ -1,0 +1,175 @@
+/* 红包详情页样式 */
+.wk-redpacket-detail-page {
+    width: 400px;
+    max-height: 600px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wk-redpacket-detail-loading,
+.wk-redpacket-detail-error {
+    padding: 60px 20px;
+    text-align: center;
+    color: #999;
+}
+
+/* 顶部区域 */
+.wk-redpacket-detail-header {
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.wk-redpacket-detail-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-redpacket-detail-sender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.wk-redpacket-detail-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.wk-redpacket-detail-name {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wk-redpacket-detail-remark {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 金额区域 */
+.wk-redpacket-detail-amount-section {
+    background: linear-gradient(135deg, #C0392B 0%, #A93226 100%);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.wk-redpacket-detail-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.wk-amount-value {
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFD93D;
+}
+
+.wk-amount-unit {
+    font-size: 18px;
+    color: #FFD93D;
+}
+
+.wk-redpacket-detail-tip {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* 领取记录 */
+.wk-redpacket-detail-records {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.wk-redpacket-detail-records-header {
+    padding: 15px 20px;
+    background: #f5f5f5;
+    color: #666;
+    font-size: 13px;
+}
+
+.wk-redpacket-detail-records-list {
+    padding: 0 20px;
+}
+
+.wk-redpacket-detail-record-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wk-redpacket-detail-record-item:last-child {
+    border-bottom: none;
+}
+
+.wk-record-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.wk-record-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.wk-record-name {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wk-lucky-tag {
+    font-size: 10px;
+    color: #E74C3C;
+    border: 1px solid #E74C3C;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+
+.wk-record-time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 2px;
+}
+
+.wk-record-amount {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.wk-redpacket-detail-empty {
+    padding: 40px 0;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+}
+

@@ -1,0 +1,145 @@
+/* 红包开启弹窗样式 */
+.wk-redpacket-open-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.wk-redpacket-open-container {
+    width: 300px;
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.wk-redpacket-open-close {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-redpacket-open-loading,
+.wk-redpacket-open-error {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 40px 0;
+}
+
+/* 发送者信息 */
+.wk-redpacket-open-header {
+    margin-bottom: 30px;
+}
+
+.wk-redpacket-open-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 12px;
+}
+
+.wk-redpacket-open-name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.wk-redpacket-open-remark {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+/* 金额区域 */
+.wk-redpacket-open-amount-section {
+    margin: 30px 0;
+}
+
+.wk-redpacket-open-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.wk-open-amount-value {
+    font-size: 52px;
+    font-weight: 700;
+    color: #FFD93D;
+}
+
+.wk-open-amount-unit {
+    font-size: 18px;
+    color: #FFD93D;
+}
+
+/* 开按钮 */
+.wk-redpacket-open-btn {
+    width: 90px;
+    height: 90px;
+    border: none;
+    background: linear-gradient(135deg, #FFD93D 0%, #F9A825 100%);
+    border-radius: 50%;
+    color: #C0392B;
+    font-size: 36px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 30px 0;
+}
+
+.wk-redpacket-open-btn:hover {
+    transform: scale(1.05);
+}
+
+.wk-redpacket-open-btn.opening {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 提示信息 */
+.wk-redpacket-open-tip {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+/* 查看详情链接 */
+.wk-redpacket-open-detail-link {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.wk-redpacket-open-detail-link:hover {
+    color: #fff;
+}
+

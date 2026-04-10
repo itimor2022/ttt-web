@@ -1,0 +1,241 @@
+/* 位置选择器样式 */
+.wk-location-picker {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+
+/* 头部 */
+.wk-location-picker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wk-location-picker-close,
+.wk-location-picker-confirm {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.wk-location-picker-close {
+    color: #666;
+}
+
+.wk-location-picker-close:hover {
+    background: #f5f5f5;
+}
+
+.wk-location-picker-confirm {
+    color: #fff;
+    background: #1890ff;
+}
+
+.wk-location-picker-confirm:hover {
+    background: #40a9ff;
+}
+
+.wk-location-picker-confirm:disabled {
+    background: #d9d9d9;
+    cursor: not-allowed;
+}
+
+.wk-location-picker-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 搜索框 */
+.wk-location-picker-search {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.wk-location-picker-search input {
+    width: 100%;
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.wk-location-picker-search input:focus {
+    border-color: #1890ff;
+}
+
+.wk-location-picker-searching {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #999;
+}
+
+/* 内容区 */
+.wk-location-picker-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* 地图 */
+.wk-location-picker-map {
+    width: 50%;
+    position: relative;
+    background: #f5f5f5;
+}
+
+.wk-location-picker-loading,
+.wk-location-picker-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+    font-size: 14px;
+}
+
+.wk-location-picker-error {
+    color: #ff4d4f;
+}
+
+/* POI列表 */
+.wk-location-picker-list {
+    width: 50%;
+    overflow-y: auto;
+    border-left: 1px solid #f0f0f0;
+}
+
+.wk-location-picker-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.wk-location-picker-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #f5f5f5;
+    transition: background 0.2s;
+}
+
+.wk-location-picker-item:hover {
+    background: #fafafa;
+}
+
+.wk-location-picker-item.selected {
+    background: #e6f7ff;
+}
+
+.wk-location-picker-item-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.wk-location-picker-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.wk-location-picker-item-name {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wk-location-picker-item-address {
+    font-size: 12px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wk-location-picker-item-distance {
+    margin-left: 8px;
+    color: #1890ff;
+}
+
+.wk-location-picker-item-check {
+    width: 20px;
+    height: 20px;
+    background: #1890ff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+/* 深色模式支持 */
+body[theme-mode=dark] .wk-location-picker {
+    background: #1f1f1f;
+}
+
+body[theme-mode=dark] .wk-location-picker-header {
+    border-color: #303030;
+}
+
+body[theme-mode=dark] .wk-location-picker-title {
+    color: #fff;
+}
+
+body[theme-mode=dark] .wk-location-picker-close {
+    color: #999;
+}
+
+body[theme-mode=dark] .wk-location-picker-search {
+    border-color: #303030;
+}
+
+body[theme-mode=dark] .wk-location-picker-search input {
+    background: #2a2a2a;
+    border-color: #303030;
+    color: #fff;
+}
+
+body[theme-mode=dark] .wk-location-picker-list {
+    border-color: #303030;
+}
+
+body[theme-mode=dark] .wk-location-picker-item {
+    border-color: #303030;
+}
+
+body[theme-mode=dark] .wk-location-picker-item:hover {
+    background: #2a2a2a;
+}
+
+body[theme-mode=dark] .wk-location-picker-item.selected {
+    background: #112a3c;
+}
+
+body[theme-mode=dark] .wk-location-picker-item-name {
+    color: #fff;
+}
+

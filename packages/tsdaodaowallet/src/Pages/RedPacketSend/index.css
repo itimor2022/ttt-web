@@ -1,0 +1,475 @@
+/* 红包发送页面 - 适配主题 */
+.wk-rp-send {
+    background: var(--wk-color-item, #fff);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* ========== Header ========== */
+.wk-rp-header {
+    background: linear-gradient(145deg, #E74C3C 0%, #C0392B 100%);
+    padding: 28px 20px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.wk-rp-header-bg {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.wk-rp-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.wk-rp-close:hover {
+    background: rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+.wk-rp-header-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-rp-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.wk-rp-subtitle {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ========== Body ========== */
+.wk-rp-body {
+    padding: 20px;
+}
+
+/* 红包类型切换 */
+.wk-rp-type-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wk-rp-type-tab {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1.5px solid var(--wk-line-color, #E8E8E8);
+    background: var(--wk-color-secondary, #FAFAFA);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--wk-text-item, #666);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.wk-rp-type-tab:hover {
+    border-color: #E74C3C;
+    background: rgba(231, 76, 60, 0.05);
+}
+
+.wk-rp-type-tab.active {
+    background: rgba(231, 76, 60, 0.1);
+    border-color: #E74C3C;
+    color: #E74C3C;
+}
+
+.wk-rp-type-icon {
+    font-size: 16px;
+}
+
+/* 输入字段 */
+.wk-rp-field {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: var(--wk-line, 1px solid #F0F0F0);
+}
+
+.wk-rp-field label {
+    width: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--wk-text-item, #333);
+    flex-shrink: 0;
+}
+
+.wk-rp-input-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.wk-rp-input-wrap input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    padding: 0 8px;
+    color: var(--wk-text-item, #333);
+    background: transparent;
+}
+
+.wk-rp-input-wrap input::placeholder {
+    color: var(--wk-color-font-tip, #CCC);
+    font-weight: 400;
+}
+
+.wk-rp-unit {
+    font-size: 15px;
+    color: var(--wk-text-item, #666);
+    margin-left: 4px;
+}
+
+/* 祝福语 */
+.wk-rp-remark {
+    padding: 16px 0;
+    border-bottom: var(--wk-line, 1px solid #F0F0F0);
+}
+
+.wk-rp-remark input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
+    color: var(--wk-text-item, #666);
+    background: transparent;
+}
+
+.wk-rp-remark input::placeholder {
+    color: var(--wk-color-font-tip, #BBB);
+}
+
+/* 错误提示 */
+.wk-rp-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #E74C3C;
+    font-size: 13px;
+    padding: 12px;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+/* 金额显示 */
+.wk-rp-total {
+    text-align: center;
+    padding: 28px 0 8px;
+}
+
+.wk-rp-total-currency {
+    font-size: 24px;
+    color: #E74C3C;
+    font-weight: 500;
+    vertical-align: top;
+    margin-right: 2px;
+}
+
+.wk-rp-total-amount {
+    font-size: 48px;
+    font-weight: 600;
+    color: #E74C3C;
+    letter-spacing: -1px;
+}
+
+/* 余额 */
+.wk-rp-balance {
+    text-align: center;
+    font-size: 13px;
+    color: var(--wk-color-font-tip, #999);
+    margin-bottom: 20px;
+}
+
+/* 提交按钮 */
+.wk-rp-submit {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.35);
+}
+
+.wk-rp-submit:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.45);
+}
+
+.wk-rp-submit:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.wk-rp-submit:disabled {
+    background: var(--wk-line-color, #CCC);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* ========== 密码输入步骤 ========== */
+.wk-rp-password-step {
+    background: var(--wk-color-secondary, #F8F9FA);
+}
+
+.wk-rp-pwd-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--wk-color-item, #fff);
+    border-bottom: var(--wk-line, 1px solid #EAEAEA);
+}
+
+.wk-rp-pwd-header h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--wk-text-item, #333);
+}
+
+.wk-rp-back {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--wk-text-item, #666);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.wk-rp-back:hover {
+    background: var(--wk-color-hover, #F0F0F0);
+}
+
+.wk-rp-close-sm {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--wk-text-item, #666);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.wk-rp-close-sm:hover {
+    background: var(--wk-color-hover, #F0F0F0);
+}
+
+/* 密码输入区域 */
+.wk-rp-pwd-body {
+    padding: 32px 24px 20px;
+    text-align: center;
+    background: var(--wk-color-item, #fff);
+}
+
+.wk-rp-pwd-amount {
+    margin-bottom: 32px;
+}
+
+.wk-rp-pwd-currency {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--wk-text-item, #333);
+    vertical-align: top;
+}
+
+.wk-rp-pwd-value {
+    font-size: 52px;
+    font-weight: 600;
+    color: var(--wk-text-item, #333);
+    letter-spacing: -2px;
+}
+
+.wk-rp-pwd-label {
+    font-size: 14px;
+    color: var(--wk-color-font-tip, #999);
+    margin-bottom: 16px;
+}
+
+/* 密码框 */
+.wk-rp-pwd-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.wk-rp-pwd-box {
+    width: 48px;
+    height: 52px;
+    background: var(--wk-color-item, #fff);
+    border: 2px solid var(--wk-line-color, #E0E0E0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.wk-rp-pwd-box.active {
+    border-color: #E74C3C;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.wk-rp-pwd-box.filled {
+    border-color: #E74C3C;
+}
+
+.wk-rp-pwd-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--wk-text-item, #333);
+    border-radius: 50%;
+}
+
+/* 密码错误 */
+.wk-rp-pwd-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #E74C3C;
+    font-size: 14px;
+    padding: 12px;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* 加载中 */
+.wk-rp-pwd-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--wk-text-item, #666);
+    font-size: 14px;
+    padding: 16px;
+}
+
+.wk-rp-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--wk-line-color, #E0E0E0);
+    border-top-color: #E74C3C;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 忘记密码 */
+.wk-rp-pwd-tip {
+    font-size: 13px;
+    color: var(--wk-color-theme, #E46342);
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.wk-rp-pwd-tip:hover {
+    text-decoration: underline;
+}
+
+/* 暗色模式 */
+body[theme-mode=dark] .wk-rp-send {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== Modal 样式覆盖 ========== */
+.wk-wallet-send-modal .ant-modal-content {
+    padding: 0 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background: transparent !important;
+}
+
+.wk-wallet-send-modal .ant-modal-body {
+    padding: 0 !important;
+}
+
+/* 自适应 */
+@media (max-width: 480px) {
+    .wk-rp-send {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    
+    .wk-rp-total-amount {
+        font-size: 40px;
+    }
+    
+    .wk-rp-pwd-value {
+        font-size: 44px;
+    }
+    
+    .wk-rp-pwd-box {
+        width: 42px;
+        height: 46px;
+    }
+    
+    .wk-rp-pwd-boxes {
+        gap: 8px;
+    }
+}

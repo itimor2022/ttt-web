@@ -1,0 +1,86 @@
+/* 支付键盘 */
+.wk-pay-keyboard {
+    background: var(--wk-color-item, #fff);
+    padding: 12px;
+    border-radius: 8px;
+    user-select: none;
+    width: 280px;
+}
+
+.wk-pay-keyboard-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.wk-pay-keyboard-row:last-child {
+    margin-bottom: 0;
+}
+
+.wk-pay-key {
+    flex: 1;
+    height: 48px;
+    background: var(--wk-color-secondary, #f5f5f5);
+    border: 1px solid var(--wk-line-color, #e8e8e8);
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--wk-text-item, #333);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+}
+
+.wk-pay-key:hover:not(.disabled) {
+    background: var(--wk-color-hover, #eee);
+}
+
+.wk-pay-key.pressed {
+    background: var(--wk-line-color, #ddd);
+    transform: scale(0.96);
+}
+
+.wk-pay-key.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.wk-pay-key-action {
+    background: var(--wk-line-color, #e5e5e5);
+    color: var(--wk-color-font-tip, #666);
+    font-size: 13px;
+}
+
+.wk-pay-key-action:hover:not(.disabled) {
+    background: #ddd;
+}
+
+.wk-pay-key-action svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wk-pay-key-text {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* 暗色模式 */
+body[theme-mode=dark] .wk-pay-keyboard {
+    background: var(--wk-color-item, #212121);
+}
+
+body[theme-mode=dark] .wk-pay-key {
+    background: var(--wk-color-secondary, #333);
+    border-color: var(--wk-line-color, #444);
+}
+
+body[theme-mode=dark] .wk-pay-key:hover:not(.disabled) {
+    background: #444;
+}
+
+body[theme-mode=dark] .wk-pay-key-action {
+    background: #383838;
+}

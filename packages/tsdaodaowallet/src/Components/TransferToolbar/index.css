@@ -1,0 +1,4 @@
+/* 转账按钮特殊效果 */
+.wk-transfer-btn:hover {
+    background-color: rgba(250, 140, 22, 0.1);
+}

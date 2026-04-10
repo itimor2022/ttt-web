@@ -1,0 +1,27 @@
+/* 位置工具栏按钮样式 */
+.wk-location-toolbar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-location-toolbar-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wk-location-toolbar-icon img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.wk-location-toolbar:hover .wk-location-toolbar-icon img {
+    opacity: 1;
+}
+
